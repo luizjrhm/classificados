@@ -1,0 +1,11 @@
+@import url("header.css");
+
+
+:root {
+    --blue1: #3b5998;
+    --banco: #FFFFFF;
+}
+
+body {
+    color: var(--branco);
+}

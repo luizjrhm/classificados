@@ -1,0 +1,25 @@
+.cabecalho{
+    height: 2.79em;
+}
+
+.container{
+    text-align: center;
+}
+
+.container__logo{
+    margin: 0.5em;
+
+}
+
+.cabecalho__faixa{
+    height: 2.0625em;
+    background-color: var(--blue1);
+}
+
+.banner__titulo{
+    padding-top: 5px;
+    text-align: center;
+    height: 2em;
+    font-size: 20px;
+    color: var(--banco);
+}
