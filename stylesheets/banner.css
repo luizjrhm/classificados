@@ -1,0 +1,17 @@
+.banner{
+    margin-top: 2.1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner__img{
+    height: 74px;
+    width: 215px;
+}
+
+.banner__h2{
+    position: absolute;
+    color: var(--banco);
+    margin: 3%;
+    padding-top: 9%;
+}

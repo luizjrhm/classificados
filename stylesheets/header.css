@@ -1,5 +1,6 @@
 .cabecalho{
     height: 2.79em;
+    display: flexbox;
 }
 
 .container{
@@ -8,7 +9,6 @@
 
 .container__logo{
     margin: 0.5em;
-
 }
 
 .cabecalho__faixa{
