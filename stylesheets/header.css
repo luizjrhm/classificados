@@ -24,8 +24,3 @@
     color: var(--banco);
 }
 
-@media screen and (min-width: 431px) {
-    .cabecalho{
-        display: none;
-    }
-}
