@@ -1,0 +1,43 @@
+.anuncios {
+    background-color: #dfe3ee;
+}
+
+.anuncio__conteiner {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.anuncio__item:nth-child(1){
+    grid-column: 1/2;
+}
+
+.anuncio__item:nth-child(12){
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.anuncio__item, .anuncio__item_destaque{
+    padding: 0.5em;
+}
+
+
+.anuncio__item_destaque{
+    background-color: #FEF287;
+}
+
+.anuncio__titulo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+.anuncio__descricao{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 431px) {
+    .anuncios{
+        display: none;
+    }
+}

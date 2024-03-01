@@ -1,6 +1,6 @@
 .cabecalho{
     height: 2.79em;
-    display: flexbox;
+    display: grid;
 }
 
 .container{
@@ -22,4 +22,10 @@
     height: 2em;
     font-size: 20px;
     color: var(--banco);
+}
+
+@media screen and (min-width: 431px) {
+    .cabecalho{
+        display: none;
+    }
 }
