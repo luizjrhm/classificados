@@ -1,15 +1,12 @@
 .banner{
     margin-top: 2.1em;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.banner__img:nth-child(1){
-    grid-column: 1/;
-}
-
-.banner__img:nth-child(4){
-    grid-column: 2/3;
-    grid-row: 2/3;
+.banner__img{
+    height: 74px;
+    width: 215px;
 }
 
 .banner__h2{
@@ -17,10 +14,4 @@
     color: var(--banco);
     margin: 3%;
     padding-top: 9%;
-}
-
-@media screen and (min-width: 431px) {
-    .banner{
-        display: none;
-    }
 }
