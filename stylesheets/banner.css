@@ -27,7 +27,7 @@
     padding-top: 9%;
 }
 
-@media screen and (min-width: 391px) {
+@media screen and (min-width: 834px) {
     .banner{
         display: none;
     }
