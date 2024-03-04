@@ -1,4 +1,8 @@
- .banner{
+.banner{
+    display: none;
+} 
+ 
+ /* .banner{
     margin-top: 2.1em;
 }
 
@@ -31,4 +35,4 @@
     .banner{
         display: none;
     }
-}
+} */
