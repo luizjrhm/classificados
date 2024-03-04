@@ -37,7 +37,7 @@
     font-size: 12px;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 391px) {
     .anuncios{
         display: none;
     }
