@@ -1,14 +1,16 @@
 @import url("header.css");
+@import url("search.css");
 @import url("banner.css");
 @import url("anuncios.css");
 
 
 :root {
+    --background-principal: #dfe3ee;
     --blue1: #3b5998;
     --banco: #FFFFFF;
 }
 
 body {
-    color: var(--branco);
+    background-color: var(--background-principal);
 }
 

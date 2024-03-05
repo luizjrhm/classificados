@@ -1,0 +1,11 @@
+.search{
+    display: flex;
+    background-color: var(--blue1);
+    padding: 0.5em;
+    justify-content:center;
+    align-items: center;
+}
+.banner__search{
+
+
+}
