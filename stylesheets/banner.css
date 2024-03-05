@@ -1,7 +1,10 @@
-.banner {}
+.banner {
+
+}
 
 .banner__conteiner {
     display: grid;
+    flex-grow: 1;
 }
 
 .banner__img:nth-child(1) {

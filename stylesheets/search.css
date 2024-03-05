@@ -5,7 +5,19 @@
     justify-content:center;
     align-items: center;
 }
-.banner__search{
 
+.search__top{
+    /* background-color: transparent; */
+    border: 1px solid var(--branco);
+    padding: 0.5em;
+    border-radius: 24px;
+    color: var(--branco);
+    width: 50%;
+}
 
+.search__top::placeholder{
+    text-align: center;
+    color: var(--branco);
+    background: url("../assets/lupa.svg") no-repeat;
+    background-position: 1em;
 }
