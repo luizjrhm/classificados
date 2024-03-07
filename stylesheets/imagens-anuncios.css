@@ -1,18 +1,18 @@
-.banner__conteiner {
+.imagens__conteiner {
     display: grid;
     flex-grow: 1;
 }
 
-.banner__img:nth-child(1) {
+.imagens__img:nth-child(1) {
     grid-column: 1/2;
 }
 
-.banner__img:nth-child(4) {
+.imagens__img:nth-child(4) {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.banner__img {
+.imagens__img {
     height: 100%;
     width: 100%;
 }
