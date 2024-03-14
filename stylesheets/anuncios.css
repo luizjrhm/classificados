@@ -4,7 +4,7 @@
 
 .anuncio__conteiner {
     display: grid;
-    gap: 0.5rem;
+    border-radius: 15px;
 }
 
 .anuncio__item{
@@ -20,9 +20,14 @@
     "descricao descricao"
     "preco contato"
     ;
+    background:var(--background-principal);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
 }
 
-.anuncio__item h2 {
+.anuncio__item a {
     grid-area: titulo;
 }
 
@@ -42,6 +47,11 @@
     grid-area: contato;
 }
 
+.anuncio__item a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .anuncio__item:nth-child(1){
     grid-column: 1/2;
 }
@@ -56,17 +66,19 @@
 }
 
 .anuncio__item_destaque{
-    /* border: 1px solid; 
-	border-color: rgba(59, 89, 152, 1); */
-    background-color: #FEF287;
+
 }
 
 .anuncio__titulo{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    padding-bottom: 0.5em;
 }
+
+.anuncio__titulo a{
+    text-decoration: none;
+}
+
 .anuncio__descricao{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
