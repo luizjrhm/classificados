@@ -4,51 +4,70 @@
 
 .anuncio__conteiner {
     display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr;
     border-radius: 15px;
+    margin: 0em 0.5em 0em 0.5em;
 }
 
-.anuncio__item{
+.anuncio__item {
     display: grid;
     flex-grow: 1;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto (2, 1fr) auto;
-    grid-template-areas: 
-    "titulo titulo"
-    "cidade cidade"
-    "descricao descricao"
-    "descricao descricao"
-    "descricao descricao"
-    "preco contato"
+    grid-template-areas:
+        "titulo titulo"
+        "descricao descricao"
+        "cidade cidade"
+        "preco preco"
+        "contato contato"
     ;
-
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: 0.3em;
+    padding: 0.3em;
 }
 
-.anuncio__item{
+.anuncio__item:nth-child(1){
+    grid-column: 1/2;
+}
+
+.anuncio__item:nth-child(48){
+    grid-column: 2/3;
+    grid-row: 24/28;
+}
+
+.anuncio__item {
     background: var(--background-principal);
 }
 
 .anuncio__item a {
     grid-area: titulo;
-}
-
-.anuncio__item h6 {
-    grid-area: cidade;
+    font-size: 15px;
 }
 
 .anuncio__item p {
     grid-area: descricao;
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 .anuncio__item h3 {
-    grid-area: preco;
+    grid-area: cidade;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 .anuncio__item h4 {
+    grid-area: preco;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.anuncio__item h5 {
     grid-area: contato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .anuncio__item a {
@@ -56,40 +75,61 @@
     text-decoration: none;
 }
 
-.anuncio__item:nth-child(1){
-    grid-column: 1/2;
-}
-
-.anuncio__item:nth-child(4){
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.anuncio__item, .anuncio__item_destaque{
-    padding: 0.5em;
-}
-
-.anuncio__item_destaque{
+.anuncio__item_destaque {
     background-color: yellow;
 }
 
-.anuncio__titulo{
-    font-family:Arial, Helvetica, sans-serif;
+.anuncio__titulo {
     font-size: 16px;
     font-weight: bold;
 }
 
-.anuncio__titulo a{
+.anuncio__titulo a {
     text-decoration: none;
 }
 
-.anuncio__descricao{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.anuncio__descricao {
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-@media screen and (min-width: 492px) {
-    .anuncios{
-        display: none;
+@media screen and (min-width: 428px) {
+
+    .anuncio__item {
+        width: auto;
+        height: auto;
+        grid-template-areas:
+        "titulo titulo"
+        "descricao descricao"
+        "cidade cidade"
+        "preco contato"
+    ;
+    }
+
+    .anuncio__item:nth-child(48) {
+        grid-column: 4/5;
+        grid-row: 9/10;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .anuncio__conteiner {
+        margin: 0em 1.5em 0em 1.5em;
+    }
+
+    .anuncio__item:nth-child(48) {
+        grid-column: 4/5;
+        grid-row: 9/10;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .anuncio__item:nth-child(48) {
+        grid-row: 8/9;
+        grid-column: 6/7;
     }
 }

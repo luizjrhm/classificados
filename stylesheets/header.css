@@ -2,7 +2,7 @@
     background-color: var(--banco);
     height: 3em;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
@@ -32,8 +32,20 @@
     color: var(--banco);
 }
 
-@media screen and (min-width: 492px) {
-    .cabecalho {
+@media screen and (min-width: 428px) {
+    .cabecalho__menu-hamburguer {
         display: none;
     }
+
 }
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+
+}
+
+@media screen and (min-width: 1920px) {}

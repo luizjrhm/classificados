@@ -17,8 +17,22 @@
     width: 100%;
 }
 
-@media screen and (min-width: 492px) {
-    .banner {
-        display: none;
+@media screen and (min-width: 428px) {
+
+    .banner__conteiner {
+        display: flex;
+        flex-grow: 1;
     }
+
 }
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+
+}
+
+@media screen and (min-width: 1920px) {}

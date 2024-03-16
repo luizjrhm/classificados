@@ -9,9 +9,10 @@
     --background-principal: #dfe3ee;
     --blue1: #3b5998;
     --banco: #FFFFFF;
+    --fonte-descricao: Lucida Console;
 }
 
 body {
+    width: auto;
     background-color: var(--banco);
 }
-
